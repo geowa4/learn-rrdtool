@@ -1,0 +1,11 @@
+---
+- name: placeholder
+  hosts: learn
+  tasks:
+    - name: update everything
+      sudo: yes
+      yum: name=* state=latest
+
+    - name: install rrdtool
+      sudo: yes
+      yum: name=rrdtool state=latest
